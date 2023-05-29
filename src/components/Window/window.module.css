@@ -1,0 +1,36 @@
+.background{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  .nonactive{
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    position: absolute;
+  }
+  
+  .window{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    height: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+    opacity: 1;
+    transition: 0.3s ease;
+    transform: scale(1);
+  }

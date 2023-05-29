@@ -1,0 +1,20 @@
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px){
+    .keklogos{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logos{
+        display: flex;
+        margin: 0;
+    }
+}
+

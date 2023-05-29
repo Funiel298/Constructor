@@ -1,0 +1,166 @@
+.text,.menu, .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.desc{
+    color: #6B6B6B;
+
+}
+.info{
+    flex-direction: row;
+}
+
+.text h1{
+    font-weight: 600;
+}
+.imgs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.mail{
+    color: #18A7B9;
+}
+
+.engineers{
+    flex-direction: row;
+}
+.info{
+    margin: 40px;
+    
+}
+
+.group 			  { 
+    position:relative; 
+    margin-bottom:45px; 
+  }
+  
+  input{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+  }
+
+  input:focus 		{ outline:none; }
+  
+  /* LABEL ======================================= */
+  label 				 {
+    color:#999; 
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  
+  /* active state */
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:14px;
+    color:#18A7B9;
+  }
+  
+  /* BOTTOM BARS ================================= */
+  .bar{ position:relative; display:block; width:300px; }
+  .bar:before, .bar:after, :before, :after  	{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#18A7B9; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%; 
+    width:100px; 
+    top:25%; 
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+  button{
+    cursor: pointer;
+  }
+  
+  input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+  .map{
+    margin-top: 5rem;
+  }
+
+
+
+  @-webkit-keyframes inputHighlighter {
+      from { background:#18A7B9; }
+    to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#18A7B9; }
+    to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#18A7B9; }
+    to 	{ width:0; background:transparent; }
+  }
+
+@media only screen and (max-width: 800px){
+  .text h1{
+    font-size: 2rem;
+  }
+  .map{
+    width: 20rem;
+  }
+  .info{
+    flex-direction: column;
+}
+  input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size:12px;
+  }
+  label{
+    font-size: 16px;
+    
+  }
+  .menu{
+    margin-right: 8rem;
+  }
+  .desc{
+    width: 30rem;
+    
+    color: #6B6B6B;
+    font-size: 14px;
+
+}
+
+}

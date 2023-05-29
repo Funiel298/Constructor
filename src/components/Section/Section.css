@@ -1,0 +1,40 @@
+.prjct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content:space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+.par{
+    width: 40%;
+}
+
+.par p{
+    font-weight: 900;
+}
+.date{
+    color: #18A7B9;
+    font-size: small;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.sectionImage{
+    max-width: 500px;
+}
+@media only screen and (max-width: 800px){
+    .prjct{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .par{
+        width: 100%;
+    }
+    .sectionImage{
+        width: 300px;
+    }
+}
