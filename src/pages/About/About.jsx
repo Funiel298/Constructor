@@ -38,8 +38,6 @@ export default function About(){
                 <p style={{color: '#18A7B9', fontWeight: '900'}}>
                     Welcome to our building company! We are a team of experienced and dedicated professionals committed to delivering high-quality construction projects that exceed our clients' expectations.
                    At our company, we understand that building a home or a commercial space is a significant investment. That's why we take every project seriously and approach it with the same level of care and attention to detail. From concept to completion, we work closely with our clients to ensure that every aspect of the project meets their unique needs and specifications.
-                   Our team consists of skilled architects, engineers, project managers, and builders who are passionate about their craft. We take pride in our workmanship and use only the best materials and equipment to ensure that every project is built to last.
-                   At the heart of our company is a commitment to excellence and customer satisfaction. We believe that building strong relationships with our clients is just as important as building exceptional structures. That's why we strive to provide open communication, transparent pricing, and timely completion of every project.
                 </p>
 
                 
